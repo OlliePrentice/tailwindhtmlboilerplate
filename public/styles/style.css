@@ -1543,9 +1543,6 @@ video {
 :root {
   --color-primary: #f8baa1;
   --color-secondary: #053399;
-  --color-off-white: #f4eeee;
-  --color-facebook: #3b5998;
-  --color-twitter: #00acee;
 }
 
 body {
@@ -1565,8 +1562,6 @@ a span {
 }
 
 .btn {
-  text-decoration: none;
-  text-transform: uppercase;
   --tw-bg-opacity: 1;
   background-color: rgba(99, 102, 241, var(--tw-bg-opacity));
 }
@@ -1586,6 +1581,8 @@ a span {
   padding-right: 1.25rem;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+  text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 0.1em;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1654,120 +1651,6 @@ h5 {
 h6 {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.gform_wrapper {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.gform_wrapper ul,
-.gform_wrapper li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.gform_wrapper ul:before,
-.gform_wrapper li:before {
-  display: none;
-}
-
-.gform_wrapper .gform_title {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;
-  --tw-text-opacity: 1;
-  color: rgba(0, 0, 0, var(--tw-text-opacity));
-}
-
-@media (min-width: 768px){
-  .gform_wrapper .gform_title{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-}
-
-.gform_wrapper .gform_body {
-  position: relative;
-}
-
-.gform_wrapper .gform_fields {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
-}
-
-.gform_wrapper .gfield {
-  position: relative;
-  flex: 0 0 100%;
-  max-width: 100%;
-  margin-bottom: 1rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.gform_wrapper .gfield.field-small {
-  flex: 0 0 33.333%;
-  max-width: 33.333%;
-}
-
-.gform_wrapper .gfield.field-medium {
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-
-.gform_wrapper .gfield.hidden_label .gfield_label {
-  display: none;
-}
-
-.gform_wrapper .gfield_label {
-  font-weight: 600;
-}
-
-.gform_wrapper .gfield_radio > li,
-.gform_wrapper .gfield_checkbox > li {
-  margin-bottom: 10px;
-}
-
-.gform_wrapper .gform_validation_container {
-  display: none;
-}
-
-.gform_wrapper .validation_error {
-  display: block;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  margin-bottom: 0.5rem;
-  --tw-text-opacity: 1;
-  color: rgba(239, 68, 68, var(--tw-text-opacity));
-}
-
-.gform_wrapper .validation_message {
-  display: block;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  --tw-text-opacity: 1;
-  color: rgba(239, 68, 68, var(--tw-text-opacity));
-}
-
-.gform_wrapper .gfield_error input {
-  --tw-border-opacity: 1;
-  border-color: rgba(252, 165, 165, var(--tw-border-opacity));
-  border-width: 1px;
-}
-
-.gform_confirmation_wrapper {
-  padding: 20px 0;
-}
-
-.gform_ajax_spinner {
-  display: none;
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {

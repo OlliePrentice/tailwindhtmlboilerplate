@@ -17,9 +17,6 @@ module.exports = {
       colors: {
         'primary': 'var(--color-primary)',
         'secondary': 'var(--color-secondary)',
-        'off-white': 'var(--color-off-white)',
-        'facebook': 'var(--color-facebook)',
-        'twitter': 'var(--color-twitter)'
       },
       fontSize: {
         'zero': '0',

@@ -1,7 +1,8 @@
+$primary: #f8baa1;
+$secondary: #053399;
+
+
 :root {
-    --color-primary: #f8baa1;
-    --color-secondary: #053399;
-    --color-off-white: #f4eeee;
-    --color-facebook: #3b5998;
-    --color-twitter: #00acee;
+    --color-primary: #{$primary};
+    --color-secondary: #{$secondary};
 }
