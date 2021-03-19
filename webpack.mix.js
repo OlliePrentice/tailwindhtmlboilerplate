@@ -5,7 +5,11 @@ mix.disableSuccessNotifications();
 mix.setPublicPath('public');
 mix.setResourceRoot('../');
 mix.sourceMaps(false, 'source-map');
-mix.browserSync();
+mix.browserSync({
+    server: {
+        baseDir: './'
+    }
+});
 
 mix.sass('./assets/styles/style.scss', 'styles/style.css')
     .options({
